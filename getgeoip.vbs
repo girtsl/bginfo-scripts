@@ -13,7 +13,7 @@ retryTimeout = 1000 	' sleep between requests, ms
 
 Select Case service		
 	Case "seeip.org" 	' appears to not be up to date as wrong location is sometimes returned
-		url = "http://ip.seeip.org/geoip"
+		url = "https://api.seeip.org/geoip"
 		
 	Case "ifconfig.co" 	' doesn't work because of CloudFlare protection, only left here as demo for multiple providers
 		url = "https://ifconfig.co/json"
